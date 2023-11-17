@@ -168,6 +168,9 @@ class TimeView():
             self.canvas.delete(self.bar)
             self.bar = self.canvas.create_rectangle(CANVAS_WIDTH - 20*remaining - 100, GRID_SIZE*16.25,
                                                CANVAS_WIDTH - 100, GRID_SIZE*16.75, fill="green")
+        else:
+            self.game_over()
+            
 
             
 class View(Frame):

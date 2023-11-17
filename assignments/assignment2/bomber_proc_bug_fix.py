@@ -275,7 +275,7 @@ def plane_landed(canvas):
     score = score + 1000
     display_score(canvas, score, level)
     msg_text = canvas.create_text(CANVAS_WIDTH/2, CANVAS_HEIGHT/2, anchor="c")
-    canvas.itemconfig(msg_text, text="SUCCESS!", font=bigfont)
+    canvas.itemconfig(msg_text, text="SUCCESS!", font=bigfont, fill="blue") #change to blue
     msg_text2 = canvas.create_text(CANVAS_WIDTH/2, CANVAS_HEIGHT/2 + 100, anchor="c")
     canvas.itemconfig(msg_text2, text="Press n for next level.", font=scorefont, fill="blue") #also changed this to blue
 
